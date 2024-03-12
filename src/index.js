@@ -2,16 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Navbar from './componants/elements/navbar/navbar';
-import Header from './componants/elements/header/header';
+import Portfolio from './componants/pages/portfolio/portfolio';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <div>
-      <Header />
-      <Navbar />
-    </div>
+    <Portfolio />
   </React.StrictMode>
 );
 
