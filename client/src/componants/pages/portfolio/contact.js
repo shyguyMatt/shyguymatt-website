@@ -22,7 +22,7 @@ export default function Projects(props) {
   return(
     <div id='portfolio-contact'>
       <div className='header-up' id='portfolio-contact-header'>
-
+        <h1>Contact Me</h1>
       </div>
       <div className='body-down' id='portfolio-contact-body'>
         <p>you can reach me at any of these places. email would probably be the best place to reach me</p>

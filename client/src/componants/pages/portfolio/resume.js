@@ -22,7 +22,7 @@ export default function Projects(props) {
   return(
     <div id='portfolio-resume'>
       <div className='header-up' id='portfolio-resume-header'>
-
+        <h1>Resume</h1>
       </div>
       <div className='body-down' id='portfolio-resume-body'>
         <h2>This is a sample resume</h2>

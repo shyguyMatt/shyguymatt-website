@@ -10,7 +10,9 @@ export default memo(function Navigation({changePath}) {
       : sideMenu.classList.add('nav-left')
 
     mainMenu.classList.contains('nav-up')
-      ? mainMenu.classList.remove('nav-up')
+      ? setTimeout(() => {
+        mainMenu.classList.remove('nav-up')
+      }, 500)
       : mainMenu.classList.add('nav-up')
   }
   function handleClick(e) {
