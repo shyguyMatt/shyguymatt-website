@@ -28,6 +28,7 @@ export default memo(function Navigation({changePath}) {
       </div>
 
       <div className='nav-left' id='hori-translate-nav'>
+        <button onClick={handleClick} value='/'>Home</button>
         <button onClick={changePath} value='/about'>About</button>
         <button onClick={changePath} value='/projects'>Projects</button>
         <button onClick={changePath} value='/contact'>Contact</button>

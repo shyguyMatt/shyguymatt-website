@@ -22,8 +22,8 @@ export default function Portfolio() {
     <div id='portfolio-root'>
       <div id='inner-page'>
         <header>
-          <h1>Matthew Herford</h1>
-          <h2>Developer</h2>
+          {/* <h1>Matthew Herford</h1>
+          <h2>Developer</h2> */}
         </header>
         <Navigation changePath={changePath}/>
         <div>
