@@ -20,22 +20,18 @@ export default function Portfolio() {
 
   return(
     <div id='portfolio-root'>
+      <Navigation changePath={changePath}/>
       <div id='inner-page'>
-        <header>
-          {/* <h1>Matthew Herford</h1>
-          <h2>Developer</h2> */}
-        </header>
-        <Navigation changePath={changePath}/>
         <div>
-          {pathname === '/about' && <About old={false} />}
-          {pathname === '/projects' && <Projects old={false} />}
-          {pathname === '/contact' && <Contact old={false} />}
-          {pathname === '/resume' && <Resume old={false} />}
+          {pathname === '/about' && <About old={false} changePath={changePath} />}
+          {pathname === '/projects' && <Projects old={false} changePath={changePath} />}
+          {pathname === '/contact' && <Contact old={false} changePath={changePath} />}
+          {pathname === '/resume' && <Resume old={false} changePath={changePath} />}
 
-          {oldPathname === '/about' && <About old={true} />}
-          {oldPathname === '/projects' &&  <Projects old={true} />}
-          {oldPathname === '/contact' && <Contact old={true} />}
-          {oldPathname === '/resume' && <Resume old={true} />}
+          {oldPathname === '/about' && <About old={true} changePath={changePath} />}
+          {oldPathname === '/projects' &&  <Projects old={true} changePath={changePath} />}
+          {oldPathname === '/contact' && <Contact old={true} changePath={changePath} />}
+          {oldPathname === '/resume' && <Resume old={true} changePath={changePath} />}
         </div>
       </div>
     </div>

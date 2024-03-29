@@ -3,7 +3,6 @@ import portrait from './../../../assets/images/me.PNG'
 
 export default function Projects(props) {
   useEffect(() => {
-    console.log(props.old)
     if(props.old == true) {
       document.querySelector('#portfolio-about-body').classList.remove('body-down')
       document.querySelector('#portfolio-about-header').classList.remove('header-up')
@@ -29,17 +28,16 @@ export default function Projects(props) {
       </div>
       <div className='body-down' id='portfolio-about-body'>
         <h2>About Me</h2>
-        <p>Welcome to my corner of the internet! I'm Matthew, a passionate web developer based in Michigan. With 1.5 years of experience under my belt, I specialize in crafting immersive web experiences using React JavaScript, HTML, and CSS.</p>
-        <h2>My Expertise</h2>
-        <p>My journey into the world of web development began with a fascination for creating digital landscapes that seamlessly blend functionality with aesthetics. I thrive on the challenge of bringing ideas to life through clean, efficient code and intuitive user interfaces. Alongside my proficiency in front-end technologies, I possess a solid understanding of databases such as MongoDB and MySQL, ensuring robust backend functionality to complement the user-facing aspects of a project.</p>
-        <h2>Beyond Coding</h2>
-        <p>When I'm not immersed in lines of code, you'll often find me buried in the pages of a captivating fantasy novel. Reading has always been my escape into other worlds, sparking creativity and inspiring new perspectives that I bring into my development work.</p>
-        <p>I'm also an avid gamer, finding joy in exploring virtual realms and solving intricate puzzles. Whether it's unraveling the mysteries of a fantastical RPG or mastering the mechanics of a strategic multiplayer game, I relish the challenge and camaraderie that gaming brings.</p>
-        <p>At home, I enjoy tinkering with my server setup, constantly seeking to optimize performance and experiment with new technologies. It's my personal sandbox where I can push the boundaries of what's possible and indulge my curiosity for all things tech.</p>
-        <h2>Personal Touch</h2>
-        <p>Quiet and inquisitive by nature, I approach both my work and life with a sense of curiosity and thoughtfulness. Every project is an opportunity to learn and grow, and I'm committed to delivering solutions that not only meet but exceed expectations.</p>
+        <p>Welcome to my corner of the internet! I'm Matthew Herford, a web developer based out of Lansing, Michigan. Quiet and reserved by nature, I find my voice through the code I write and the digital solutions I build. I have a passion for problem-solving and looking under the hood to find out how things tick. Which has led me down the road of web development.</p>
+        <h2>Mantra</h2>
+        <p>	A personal mantra of mine is “Never take broken for an answer”. It means to me that nothing that is broken is ever meaningless. There is always something to be learned. What went wrong? What went right? What can I take away for my next success? All of it is valuable information and I never want to look at something broken and not learn something from it.</p>
+        <h2>Journey till now</h2>
+        <p>Since an early age, I've been drawn to puzzles and challenges of all kinds. Whether it was solving logic puzzles or tinkering with gadgets, I've always had a knack for unraveling mysteries. This curiosity and a problem-solving mindset led me to pursue a career in web development.</p>
+        <p>Flash forward to today and I have completed a full stack web development bootcamp hosted by Michigan State University. Where I was able to further hone my skills as a web developer and gain some real experience working with a team completing web applications from inception to deployment.</p>
+        <p>I love web development because it's a field where there is always something to solve, always some new puzzle to figure out. It's a field where there is no roof to how much you can learn.</p>
         <h2>Let's Connect</h2>
-        <p>Whether you're looking to collaborate on a project, discuss the latest fantasy novels, or simply geek out over technology, I'd love to connect. Feel free to reach out, and let's embark on an exciting journey together!</p>
+        <p>	If you're looking for a passionate web developer with an unending desire to improve, look no further. Let's embark on a journey to create something extraordinary together!</p>
+        <div className='spacer'></div>
       </div>
     </div>
   )

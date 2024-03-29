@@ -21,21 +21,22 @@ export default memo(function Navigation({changePath}) {
   }
 
   return(
-    <div id='portfolio-nav'>
+    <>   
       <div className='' id='vert-translate-nav'>
         <button onClick={handleClick} value='/about'>About</button>
         <button onClick={handleClick} value='/projects'>Projects</button>
         <button onClick={handleClick} value='/contact'>Contact</button>
         <button onClick={handleClick} value='/resume'>Resume</button>        
       </div>
-
-      <div className='nav-left' id='hori-translate-nav'>
-        <button onClick={handleClick} value='/'>Home</button>
-        <button onClick={changePath} value='/about'>About</button>
-        <button onClick={changePath} value='/projects'>Projects</button>
-        <button onClick={changePath} value='/contact'>Contact</button>
-        <button onClick={changePath} value='/resume'>Resume</button>        
+      <div id='portfolio-nav'>
+        <div className='nav-left' id='hori-translate-nav'>
+          <button onClick={handleClick} value='/'>Home</button>
+          <button onClick={changePath} value='/about'>About</button>
+          <button onClick={changePath} value='/projects'>Projects</button>
+          <button onClick={changePath} value='/contact'>Contact</button>
+          <button onClick={changePath} value='/resume'>Resume</button>        
+        </div>
       </div>
-    </div>
+    </>
   )
 })
